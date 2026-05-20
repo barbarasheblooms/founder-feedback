@@ -15,7 +15,7 @@ export async function POST(req) {
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-opus-4-5',
         max_tokens: 1200,
         system: SYSTEM,
         messages: [{ role: 'user', content: `${entryCount} feedback entries:\n\n${libraryContext}` }],
